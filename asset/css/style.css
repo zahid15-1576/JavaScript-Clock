@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 106vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #111 50%, #ffa537 50% );
+}
+
+/* .clock{
+    height: 90vmin;
+    width: 90vmin;
+    background: linear-gradient(45deg, #ffa537 50%, #111 50%);
+    border-radius: 50%;
+    border:4vmin solid #868E96;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 30px 5px black;
+    inset: 0 0 10px 1px black;
+} */
+
+.clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 2.5rem;
+    color:linear-gradient(45deg, #ffa537 50%, #111 50%);
+    padding-top: 10px;
+  }
+  
+  .clock .number1 { --rotation: 30deg; color: #ffa537; }
+  .clock .number2 { --rotation: 60deg; color: #ffa537;}
+  .clock .number3 { --rotation: 90deg; color: #ffa537;}
+  .clock .number4 { --rotation: 120deg; color: #ffa537;}
+  .clock .number5 { --rotation: 150deg; color: #111; }
+  .clock .number6 { --rotation: 180deg; color: #111;}
+  .clock .number7 { --rotation: 210deg; color: #111;}
+  .clock .number8 { --rotation: 240deg; color: #111;}
+  .clock .number9 { --rotation: 270deg; color: #111;}
+  .clock .number10 { --rotation: 300deg; color: #111;}
+  .clock .number11 { --rotation: 330deg; color: #ffa537;}
+  .clock .number12 { --rotation: 360deg; color: #ffa537;}
+
+
+
+  /* .hand {
+  width: 35%;
+  right: 50%;
+  height: 17px;
+  background: #868E96;
+  position: absolute;
+  top: 50%;
+  border-radius: 6px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand.hour-hand {
+  width: 25%;
+  z-index: 3;
+  
+}
+
+.hand.min-hand {
+  height: 10px;
+  z-index: 10;
+  width: 30%;
+  background:white ;
+}
+
+.hand.second-hand {
+  background: #ee791a;
+  width: 40%;
+  height: 5px;
+}
+
+.hand.m-hand {
+    height: 40px;
+    z-index: 15;
+    width: 40px;
+    background:linear-gradient(135deg, #ffa537 50%, #111 50%);
+    border-radius: 50%;
+  } */
+
+
+  .clock {
+    height: 90vmin;
+    width: 90vmin;
+    background: linear-gradient(45deg, #ffa537 50%, #111 50%);
+    border-radius: 50%;
+    border:4vmin solid #868E96;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 0 30px 5px black;
+    transform: translate(-50%,-50%);
+    background-size: cover;
+    position: absolute;
+  }
+
+  /* .clock{
+    height: 90vmin;
+    width: 90vmin;
+    background: linear-gradient(45deg, #ffa537 50%, #111 50%);
+    border-radius: 50%;
+    border:4vmin solid #868E96;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 30px 5px black;
+    inset: 0 0 10px 1px black;
+} */
+  
+  /* clock style ends */
+  
+  /* round center */
+  
+  /* .clock::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+  } */
+  
+  /* round center style ends */
+  
+  /* common style for every hand */
+  
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    transform-origin: bottom;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  
+  /* common style ends */
+  
+  /* hour hand */
+  
+  .hour {
+    width: 20px;
+    height: 35%;
+    background-color: white;
+    left: 48%;
+  }
+  
+  /* hour hand style ends */
+  /* minute hand style */
+  
+  .minute {
+    width: 15px;
+    height: 40%;
+    background-color: gray;
+  }
+  
+  /* minute hand style ends */
+  /* second hand style */
+  
+  .second {
+    width: 3px;
+    height: 40%;
+    background-color: #ff0000;
+  }
+  
+  /* second hand style ends */
+
+  .m-hand {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #ffa537 50%, #111 50%);
+    border-radius: 50%;
+    left: 46.5%;
+  } 
